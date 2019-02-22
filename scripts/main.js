@@ -24,8 +24,8 @@
       var newSpeed = ParseInt(document.getElementById("speed").value);
       newSpeed=+100;
         document.getElementById('speedVar').innerHTML = newSpeed;
-        alert('kur');
-      }
+
+      })
 
 //Build-in Console function for acceleration
 
