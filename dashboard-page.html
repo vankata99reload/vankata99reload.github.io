@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Assignment 1 - Dashboard</title>
+		<link rel="stylesheet" type="text/css" href="styles/mystyle.css">
+
+	</head>
+
+	<body background="images/background.jpg">
+
+
+<header>
+	<h1>Elon Musk's Interface ITC</h1>
+	<figure>
+		<img src="images/top-elon.jpg" alt="elon-musk" class="stay-same-img">
+	</figure>
+	<p>Elon before seeing the interface</p>
+</header>
+
+<main>
+
+<div class="allcontent">
+
+	<div class="para">
+
+					<h2 class="h2">Parameters</h2>
+
+					<h3 id="fuel">Fuel</h3>
+					<p>7 500 / 10 000L</p>
+					<figure>
+					 <img class="icon" src="images/fuel.png" alt="icon-fuel" >
+					</figure>
+
+
+					<h3 id="throttle">Throttle</h3>
+					<p>50 / 100%</p>
+					<figure>
+				   	<img src="images/throttle2.png" alt="icon-throttle" class="icon" >
+				   </figure>
+
+
+					<h3 id="speed">Speed</h3>
+					<p id="speedVar">1000</p><p>km/h</p>
+					<figure>
+				 	<img src="images/speed3.png" alt="icon-speed" class="icon" id="speed-icon" >
+				  </figure>
+
+					<h3 id="accelerate">Accelerate</h3>
+					<p>5500 Force</p>
+
+					 <figure>
+					 <img src="images/accc.png" alt="icon-accelerate" class="icon">
+					 </figure>
+
+
+
+	</div>
+
+	<div class="metrics">
+		<h2 class="h2">Metrics</h2>
+		<h3>Distance left</h3>
+<p>32.98 / 57.60 million km</p>
+<figure>
+	<img src="images/earth.png" alt="earth-icon">
+	<img src="images/line.png" alt="line-icon">
+	<img src="images/mars.png" alt="mars-icon">
+</figure>
+
+
+
+<h3>Gravity convert:</h3>
+<input type="text" id="gravityConvertStart" placeholder="Enter Earth G">
+<input type="button" id="startGravity" value="start">
+<p class="gravity" id="gravityConvert"><b>No input yet!</b></p>
+
+<h3>Miles Convert:</h3>
+<input type="text" id="milesConvertStart" placeholder="Enter Earth miles">
+<input type="button" id="startMiles" value="start">
+<p class="miles" id="milesConvert"><b>No input yet!</b></p>
+
+	</div>
+
+
+	<div class="edibles">
+		<h2 class="h2">Edibles</h2>
+
+		<h3>Food</h3>
+		<p class="food-value">5 bars left</p>
+		<figure>
+			<img src="images/food.png" alt="food-icon" class="icon" id="eatBars">
+		</figure>
+
+		<h3>Water</h3>
+		<p class="water-value">5 drops left</p>
+		<figure>
+			<img src="images/water.png" alt="water-icon" class="icon" id="drinkWater">
+		</figure>
+
+		<div class="infopane food">
+						<p> <span>Food:</span> <span class="value_foodie">XXXXX</span></p>
+
+								<div class="cta foodie">
+										<a href="#">Give me food!</a>
+								</div>
+
+
+		</div>
+
+		<div class="infopane drinks">
+						<p> <span>Drinks:</span> <span class="value_drinks">XXXXX</span></p>
+						<div class="cta drinks">
+								<a href="#">Give me drinks!</a>
+						</div>
+		</div>
+	</div>
+
+
+</div>
+
+
+</main>
+
+<footer>
+	<figure>
+		<img src="images/down-elon.jpg" alt="elon-musk" class="stay-same-img">
+	</figure>
+	<p>Elon after seeing the interface</p>
+</footer>
+
+<script src="scripts/main.js" defer></script>
+	</body>
+</html>

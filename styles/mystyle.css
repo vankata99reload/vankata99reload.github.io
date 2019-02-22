@@ -1,0 +1,111 @@
+body{
+	font-family: helvetica;
+	color: #FFFFFF;
+	background-color: #232439;
+	text-align: center;
+}
+
+header, footer{
+	color: white;
+  padding:10px;
+  margin: 20px;
+  margin: 0 auto;
+	text-align: center;
+	font-size: 32px;
+	image-orientation: center;
+  }
+
+.h2 {
+	text-align: center;
+	border: #ffffff;
+	border-style: double;
+	border-radius: 3em;
+	width: auto;
+	padding: 15px;
+	margin: 20px;
+	background:rgba(168, 52, 150, 0.3);
+	font-size: 30px;
+
+}
+
+/*
+.col-narrow{
+  width: 35%;
+  float: right;
+  min-height: 175px;
+}
+.col-wide{
+  width: 65%;
+  float: left;
+  padding-left: 20px;
+  min-height: 175px;
+}
+
+.info-wrapper {
+  background: blue;
+  border-radius: 8px;
+  margin: 8px 15px;
+  padding: 1px 11px;
+}
+
+.logo-wrapper {
+  border-radius: 3px;
+  margin: 0 15px;
+  padding: 5px;
+}
+*/
+
+
+
+.allcontent{
+	display: flex;
+	align-content: centered;
+	 border: #ffffff;
+	 border-style: solid;
+	 background:rgba(168, 52, 150, 0.3);
+	 border-radius: 1em;
+	 width: auto;
+	 padding: 10px;
+	 margin: 10px;
+
+
+}
+
+#content-wrap{
+    margin: 0 auto;
+    padding: 20px;
+
+		display: flex;
+}
+.para {
+	flex:1.5;
+	border: white;
+	border: auto;
+
+}
+
+.metrics{
+flex: 2;
+}
+
+.edibles{
+flex: 1.5;
+}
+
+#fuel{
+
+}
+
+
+img{
+    width: 100px;
+    height: 100px;
+}
+.stay-same-img{
+	width: 750px;
+	height: 450px;
+}
+
+input{
+	font-size: 20px;
+}
