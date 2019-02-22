@@ -4,6 +4,7 @@
 
     var drinks=5;
     var foods=5;
+
     document.getElementById('startGravity').onclick = function () {
         var gravity = (document.getElementById("gravityConvertStart").value)/3.50;
       document.getElementById('gravityConvert').innerHTML = gravity + 'G is the gravity on Mars';
