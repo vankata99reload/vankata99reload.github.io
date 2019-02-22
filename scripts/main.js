@@ -1,85 +1,4 @@
-/*
-  //var object{}
 
-    var beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
-    console.log(beasts.indexOf('giraffe'));
-    function (){
-
-    }
-
-  var  para;
-  env, supplies, metrics
-*/
-
-  /*
-
-  var today = new Date();
-  var speedInitial = 1000;
-  var speed = ParseInt(document.getElementById('speedVar'));
-  speed.addEventListener('keydown', logKey);
-
-  function logKey(speed){
-    speed+=100;
-  }
-
-  speed.onkeypress = function(){
-    speed+=100;
-  }
-  */
-  /*
-  var g;
-  var countdownHandle;
-
-  var start = document.getElementById("start");
-  start.addEventListener("click", function(){
-  alert("sup");})
-
-
-  function updateCountdown(){
-  		document.getElementById('gravityConvert').innerHTML = g + 'G mars gravity';
-
-  }
-
-  document.getElementById('start').onclick = function () {
-  	g = parseInt(document.getElementById('gravityConvertStart').value)/3.75;
-  };
-
-
-
-  document.getElementById('marsbar').onclick = function(){
-  var select = document.getElementById('select').selectedIndex;
-  console.log(select);
-
-  function uniKeyCode() {
-  var key = event.&#8593;
-  document.getElementById("demo2").innerHTML = "Unicode KEY code: " + key;
-}
-
-function uniKeyCode();
-
-
-  document.getElementById('start').onclick = function(){
-  var select = document.getElementById('select').selectedIndex;
-  console.log(select);
-
-function itemKeypress(event){
-  if (event.which === 38) {
-    alert("bitch");
-  }
-}
-
-
-    var data{
-
-    }
-
-
-
-
-    	var checkbox = document.getElementById('checkbox').checked;
-    	console.log(checkbox);
-    };
-*/
 
 //Gravity and Miles Measurement
 
@@ -99,22 +18,34 @@ function itemKeypress(event){
 
 //Speed Meter
 
-      document.getElementById('speed-icon').onmousedown = function(){
+      var element = document.getElementById('speed-icon');
+      element.addEventListener("click",function(){
 
       var newSpeed = ParseInt(document.getElementById("speed").value);
       newSpeed=+100;
         document.getElementById('speedVar').innerHTML = newSpeed;
+        alert('kur');
       }
 
+//Build-in Console function for acceleration
 
+function accelerate(accelerate){
+	var newAcc = accelerate * 1250.50;
+
+  console.log(newAcc);
+
+  document.getElementById('acc-text').innerHTML = newAcc + 'P Accelerating Force';
+
+
+}
+
+accelerate(5);
 
 //Food and Drink Input and Meter
 
 
-  document.getElementById('eatBars').onclick = function() {
-
-    foods = foods - 1;
-
+  document.getElementById('eat').onclick = function() {
+    food-value-=1;
     if (foods==0){
       document.getElementById('food-value').innerHTML = 'Out of Mars bars!';
     } else {
@@ -123,11 +54,9 @@ function itemKeypress(event){
   }
 
 
-  document.getElementById('drinkWater').onclick = function() {
-
-    drinks = drinks - 1;
-
-    if (drinks ==0){
+  document.getElementById('drink').onclick = function() {
+    water-value-=1;
+    if (drinks==0){
       document.getElementById('water-value').innerHTML = 'Out of water drops!';
     } else {
       document.getElementById('water-value').innerHTML = drinks + ' drops left';
