@@ -32,7 +32,7 @@
 //Build-in Console function for acceleration
 
 function accelerate(accelerate){
-	var newAcc = accelerate * 1250;
+	var newAcc = accelerate * 1250.50;
 
   console.log(newAcc);
 
