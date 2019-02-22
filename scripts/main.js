@@ -1,5 +1,6 @@
 
 
+
 //Gravity and Miles Measurement
 
     var drinks=5;
@@ -20,7 +21,7 @@
 //Speed Meter
 
       var element = document.getElementById('speed-icon');
-      element.addEventListener("click",function(){
+      element.addEventListener("click", function(){
 
       var newSpeed = ParseInt(document.getElementById("speed").value);
       newSpeed=+100;
@@ -31,12 +32,11 @@
 //Build-in Console function for acceleration
 
 function accelerate(accelerate){
-	var newAcc = accelerate * 1250.50;
+	var newAcc = accelerate * 1250;
 
   console.log(newAcc);
 
   document.getElementById('acc-text').innerHTML = newAcc + 'P Accelerating Force';
-
 
 }
 
@@ -46,7 +46,7 @@ accelerate(5);
 
 
   document.getElementById('eat').onclick = function() {
-    food-value-=1;
+    foods-=1;
     if (foods==0){
       document.getElementById('food-value').innerHTML = 'Out of Mars bars!';
     } else {
@@ -56,7 +56,7 @@ accelerate(5);
 
 
   document.getElementById('drink').onclick = function() {
-    water-value-=1;
+    drinks-=1;
     if (drinks==0){
       document.getElementById('water-value').innerHTML = 'Out of water drops!';
     } else {
