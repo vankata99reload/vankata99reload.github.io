@@ -23,16 +23,17 @@
         material="src: #wood"
         shadow
         animation="property: rotation;
-                   to: 90 360 180;
+                   to: 0 360 180;
                    dur: 2000;
                    easing: easeInOutCubic;
                    loop: true"
 
+                   animation__1="property: position;
+                              position="2 2 3";
+                              loop: true"
 
-        animation__2="property: rotation;
-                   to: 360 60 180;
-                   dur: 3000;
-                   easing: easeInOutCirc;
+        animation__2="property: material.color;
+                  color="red";
                    loop: true" >
 
       </a-box>
