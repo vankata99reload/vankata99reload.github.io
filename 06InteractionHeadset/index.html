@@ -19,21 +19,25 @@
 
       <a-camera>
         <a-entity id="mouseCursor"
-          cursor="fuse: true; fuseTimeout: 1500
+          cursor="fuse: true; fuseTimeout: 500
           animation__click="property: scale; startEvents: click; easing: easeInCubic; dur: 150; from: 0.1 0.1 0.1; to: 1 1 1"
-          animation__fusing="property: scale; startEvents: fusing; easing: easeInCubic; dur: 1500; from: 1 1 1; to: 0.1 0.1 0.1"
-          animation__mouseleave="property: scale; startEvents: mouseleave; easing: easeInCubic; dur: 500; to: 1 1 1"
+          animation__fusing="property: scale; startEvents: fusing; easing: easeInCubic; dur: 150; from: 1 1 1; to: 0.1 0.1 0.1"
           cursor="fuse: true;"
+          radius-inner= "0.02"
+          radius-outer= "0.03"
           material="color: black; shader: flat"
-          position="0 0 -3"
+          position="0 0 -1"
           geometry="primitive: ring">
+
         </a-entity>
+
         <a-ring id="cursorRing"
           position="0 0 -1"
           radius-inner= "0.02"
           radius-outer= "0.03"
           material="color: yellow; shader: flat">
         </a-ring>
+
       </a-camera>
 
       <a-box id="myBox"
