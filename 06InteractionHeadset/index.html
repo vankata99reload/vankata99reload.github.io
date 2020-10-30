@@ -64,20 +64,14 @@ position="0 0.284 0"
 
 <a-camera>
   <a-entity id="mouseCursor"
-    cursor="fuse: true; fuseTimeout: 1500; maxDistance: 30">
-  </a-entity>
-  <a-ring id="cursorRing"
-
+    cursor="fuse: true; fuseTimeout: 1500; maxDistance: 30"
+    animation__click="property: scale; startEvents: click; easing: easeInCubic; dur: 150; from: 0.1 0.1 0.1; to: 1 1 1"
+    animation__fusing="property: scale; startEvents: fusing; easing: easeInCubic; dur: 150; from: 1 1 1; to: 0.1 0.1 0.1"
     position="0 0 -3"
     radius-inner= "0.02"
     radius-outer= "0.03"
     material="color: red; shader: flat">
-</a-ring>
-
-  <a-animation begin="click" easing="ease-in" attribute="scale"
-       fill="forwards" from="0.2 0.2 0.2" to="1 1 1" dur="150"></a-animation>
-  <a-animation begin="fusing" easing="ease-in" attribute="scale"
-       fill="backwards" from="1 1 1" to="0.2 0.2 0.02" dur="1500"></a-animation>
+</a-entity>
 
 </a-camera>
 
