@@ -1,7 +1,7 @@
 
 var rotationSpeed = 0.001;
-var beer = document.getElementById('beer');
-var bourbon = document.getElementById('bourbon');
+var beer = document.getElementById('beer1');
+var bourbon = document.getElementById('bourbon1');
 function spin(){
 	beer.object3D.rotation.x += rotationSpeed;
 	beer.object3D.rotation.y += rotationSpeed;
