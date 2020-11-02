@@ -31,14 +31,14 @@
               animation__mouseleave="property: scale; startEvents: mouseleave; easing: easeInCubic; dur: 500; to: 1 1 1"
               cursor="fuse: true; maxDistance:15"
               material="color: cyan; shader: flat"
-              position="0 0 -3"
-              geometry="primitive: ring; radiusInner:0.2; radiusOuter: 0.3 "></a-entity>
+              position="0 0 -1"
+              geometry="primitive: ring; radiusInner:0.02; radiusOuter: 0.03 "></a-entity>
           </a-entity>
         //</a-entity>
 
 
 
- 
+
 
 
       <a-entity gltf-model="#beer"
@@ -53,11 +53,11 @@
                direction="alternate"
                begin="click"></a-animation>
 
-    </a-entity>
+     </a-entity>
 
-    <a-entity gltf-model="#beer"
+    <a-entity gltf-model="#beer1"
     scale="0.06 0.06 0.05"
-    position="-0.094 0.643 -0.312"
+    position="-0.932 0.674 -0.298"
     >
   </a-entity>
   <a-entity gltf-model="#bourbon"
@@ -75,6 +75,13 @@ position="0 0.284 0"
 
  <a-box id="table" position="-0.607 0.400 2.349" width="0.5" height ="0.3" material="src: #table">
  </a-box>
+
+ <a-entity position="-3.5 1 0">
+    <a-entity mixin="cube red">
+      <a-animation begin="click" attribute="position" from="0 0 0"
+                   to="0 0 -10" dur="2000" fill="both"></a-animation>
+    </a-entity>
+  </a-entity>
 
 
 
