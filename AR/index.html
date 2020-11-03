@@ -14,9 +14,14 @@
     <a-asset-item id="beer" src="images/beer_can (1)/scene.gltf"></a-asset-item>
 </a-assets>
     <a-scene embedded arjs>
+      <a-marker-camera type='pattern' src='images/pattern-download.patt'>
+
+
+
       <a-entity gltf-model="#beer" id="beer2"
       scale="0.6 0.6 0.5"
       position="0 0.5 0"
+      rotation="50 50 50"
       >
       <a-animation attribute="scale"
       dur="1000"
@@ -26,8 +31,11 @@
       easeing="ease-in-out-circ"
       repeat="infefinite"></a-animation>
 
+
+
     </a-entity>
-      <a-marker-camera type='pattern' src='images/pattern-download.patt'></a-marker-camera>
+      </a-marker-camera>
+      
     </a-scene>
   </body>
 </html>
