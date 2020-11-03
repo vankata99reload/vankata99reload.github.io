@@ -10,8 +10,14 @@
 
   </head>
   <body style='margin : 0px; overflow: hidden;'>
+<a-assets>
+    <a-asset-item id="beer" src="images/beer_can (1)/scene.gltf"></a-asset-item>
+</a-assets>
     <a-scene embedded arjs>
-
+      <a-entity gltf-model="#beer" id="beer2"
+      scale="0.06 0.06 0.05"
+      >
+    </a-entity>
       <a-marker-camera type='pattern' src='images/marker.patt'></a-marker-camera>
     </a-scene>
   </body>
