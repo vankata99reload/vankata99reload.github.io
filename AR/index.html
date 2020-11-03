@@ -6,119 +6,13 @@
     <meta name="viewport" content="width=device-width">
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="scripts/main.js" defer></script>
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+
   </head>
-  <body>
-    <a-scene background="color: #333333">
-      <a-assets>
-          <img id="wood" src="images/wood.jpg" />
-          <img id="wood2" src="images/wood2.jpg" />
-          <img id="grass" src="images/grass.jpg" />
-          <img id="wood3" src="images/wood4.jpeg"/>
-          <img id="sky" src="images/1.jpg" />
-            <img id="table" src="images/download.jpg" />
-            <img id="mat" src="images/Beer_Matt_baseColor.jpeg" />
- <a-asset-item id="bar" src="images/scene.gltf"></a-asset-item>
- <a-asset-item id="beer" src="images/beer_can (1)/scene.gltf"></a-asset-item>
- <a-asset-item id="bourbon" src="images/bourbon_bottle (2)/scene.gltf"></a-asset-item>
+  <body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs>
 
- <a-asset-item id="music" src="images/music/scene.gltf"></a-asset-item>
-
-<a-asset-item id="tables" src="images/restaurant1/scene.gltf"></a-asset-item>
- <audio id="song1" src="images/song1.mp3"  preload="auto"></a-asset-item>
- <audio id="song2" src="images/song2.mp3"  preload="auto"></a-asset-item>
- <audio id="song3" src="images/song3.mp3"  preload="auto"></a-asset-item>
- <audio id="song4" src="images/song4.mp3"  preload="auto"></a-asset-item>
- <audio id="song5" src="images/song5.mp3"  preload="auto"></a-asset-item>
-
-      </a-assets>
-
-      <a-entity position="0 2.2 4">
-          <a-entity camera look-controls wasd-controls>
-            <a-entity
-              animation__click="property: scale; startEvents: click; easing: easeInCubic; dur: 150; from: 0.1 0.1 0.1; to: 1 1 1"
-              animation__fusing="property: scale; startEvents: fusing; easing: easeInCubic; dur: 1500; from: 1 1 1; to: 0.1 0.1 0.1"
-              animation__mouseleave="property: scale; startEvents: mouseleave; easing: easeInCubic; dur: 500; to: 1 1 1"
-              cursor="fuse: true; maxDistance:15"
-              material="color: cyan; shader: flat"
-              position="0 0 -1"
-              geometry="primitive: ring; radiusInner:0.02; radiusOuter: 0.03 "></a-entity>
-          </a-entity>
-      </a-entity>
-
-
-      <a-entity id="music"  gltf-model="#music" id="music"
-      scale="0.01 0.01 0.01"
-                position="-2.719 1.434 -0.007" sound="src: #song1; autoplay: true"></a-entity>
-
- -2.719 1.434 -0.007
-
-      <a-entity gltf-model="#beer" id="beer1"
-      scale="0.08 0.07 0.08"
-      position="-0.932 0.784 -0.238"
-      material="color: cyan"
-      animation__mouseenter="property: components.material.material.color; type: color; to: blue; startEvents: mouseenter; dur: 500";
-      animation__mouseleave="property: components.material.material.color; type: color; to: gray; startEvents: mouseleave; dur: 500";
-
-      event-set__enter="_event: mouseenter; color: #green">
-
-         <a-animation attribute="position"
-               dur="1000"
-               fill="forwards"
-               to="-0.932 1.5 -0.4"
-               direction="alternate"
-               begin="click"></a-animation>
-
-     </a-entity>
-
-    <a-entity gltf-model="#beer" id="beer2"
-    scale="0.06 0.06 0.05"
-    position="-0.932 0.674 -0.298"
-    >
-  </a-entity>
-  <a-entity gltf-model="#bourbon" id="bourbon1"
-  scale="0.06 0.06 0.05"
-  position="1.074 0.627 -0.229"
-  >
-</a-entity>
-
-
-<a-entity gltf-model="#tables"
-scale="1 1 1"
-position="-0.607 5 2.349"
->
-</a-entity>
-
-
-<a-entity gltf-model="#bar"
-scale="0.01 0.01 0.01"
-position="0 0.284 0"
->
-</a-entity>
-
- <a-sky src="#sky"></a-sky>
-
- <a-box id="table" position="-0.607 0.400 2.349" width="0.5" height ="0.3" material="src: #table">
- </a-box>
-
- <a-entity position="-3.5 1 0">
-    <a-entity mixin="cube red">
-      <a-animation begin="click" attribute="position" from="0 0 0"
-                   to="0 0 -10" dur="2000" fill="both"></a-animation>
-    </a-entity>
-  </a-entity>
-
-
-
-
-      <a-plane id="ground"
-        position="0 0 -4"
-        rotation="-90 0 0"
-        width="100"
-        height="100"
-
-        material="src: #wood3"
-        shadow>
-      </a-plane>
+      <a-marker-camera type='pattern' src='images/marker.patt'></a-marker-camera>
     </a-scene>
   </body>
 </html>
