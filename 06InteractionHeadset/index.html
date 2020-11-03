@@ -44,6 +44,10 @@
       <a-entity gltf-model="#beer" id="beer1"
       scale="0.08 0.07 0.08"
       position="-0.932 0.784 -0.238"
+      material="color: cyan"
+      animation__mouseenter="property: components.material.material.color; type: color; to: blue; startEvents: mouseenter; dur: 500";
+      animation__mouseleave="property: components.material.material.color; type: color; to: gray; startEvents: mouseleave; dur: 500";
+
       event-set__enter="_event: mouseenter; color: #green">
 
          <a-animation attribute="position"
