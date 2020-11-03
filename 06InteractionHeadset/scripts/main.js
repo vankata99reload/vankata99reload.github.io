@@ -1,26 +1,43 @@
 
-var rotationSpeed = 0.001;
-var beer = document.getElementById('beer1');
+var level = 0.2;
+var beer2 = document.getElementById('beer1');
+var beer1 = document.getElementById('beer2');
 var bourbon = document.getElementById('bourbon1');
-function spin(){
-	beer.object3D.rotation.x += rotationSpeed;
-	beer.object3D.rotation.y += rotationSpeed;
-	beer.object3D.rotation.z += rotationSpeed/2;
-	//console.log(myOtherBox.object3D.rotation);
-}
-setInterval(spin, 10);
 
 
-beer.addEventListener('mouseenter', function(){
+
+beer1.addEventListener('mouseenter', function(){
+		beer2.object3D.position.y += level;
 	rotationSpeed = 0.01;
 	console.log('entered');
 });
 
-beer.addEventListener('mouseleave', function(){
+beer1.addEventListener('mouseleave', function(){
+	beer2.object3D.position.y -= level;
 	rotationSpeed = 0.001;
 	console.log('left');
 });
 
+
+beer2.addEventListener('click', function(){
+
+
+	function spin(){
+		beer2.object3D.position.x += level;
+		beer2.object3D.position.z += level;
+
+		beer2.object3D.rotation.x += level;
+		beer2.object3D.rotation.y += level;
+			beer2.object3D.rotation.z += level/2;
+		//console.log(myOtherBox.object3D.rotation);
+
+		if (level=20) {
+			break;
+		}
+	}
+	setInterval(spin, 10);
+
+});
 
 
 
