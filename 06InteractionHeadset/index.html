@@ -56,10 +56,17 @@
       scale="0.08 0.07 0.08"
       position="-0.932 0.784 -0.238"
       material="color: cyan"
-      animation__mouseenter="property: components.material.material.color; type: color; to: blue; startEvents: mouseenter; dur: 500";
-      animation__mouseleave="property: components.material.material.color; type: color; to: gray; startEvents: mouseleave; dur: 500";
+      animation__mouseenter="property: rotation; to: 0 180 0; loop: true; dur: 10000";
+      animation__mouseleave="property: rotation; to: 0 0 0; loop: true; dur: 10000";
+      >
 
-      event-set__enter="_event: mouseenter; color: #green">
+
+      animation__mouseenter="
+        property: components.material.material.color;
+        type: color;
+        to: blue;
+        startEvents: mouseenter;
+        dur: 500;"
 
          <a-animation attribute="position"
                dur="1000"
@@ -73,6 +80,11 @@
     <a-entity gltf-model="#beer" id="beer2"
     scale="0.06 0.06 0.05"
     position="-0.932 0.674 -0.298"
+
+    animation__mouseenter="property: rotation; to: 0 360 0; loop: true; dur: 10000";
+    animation__mouseleave="property: rotation; to: 0 0 0; loop: true; dur: 10000";
+
+
     >
   </a-entity>
   <a-entity gltf-model="#bourbon" id="bourbon1"
@@ -84,7 +96,7 @@
 
 <a-entity gltf-model="#tables"
 scale="1 1 1"
-position="-0.607 5 2.349"
+position="6.367 0.067 2.759"
 >
 </a-entity>
 
