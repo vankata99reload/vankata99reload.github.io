@@ -10,12 +10,11 @@ var song5 = document.getElementById('song5');
 var music = document.getElementById('music');
 
 var songs = new Array (song1, song2, song3, song4, song5);
-
+var beer1 = document.getElementById('beer2');
+var beer2 = document.getElementById('beer1');
+var bourbon = document.getElementById('bourbon');
 
 music.addEventListener('mouseenter', function(){
-
-
-
 	console.log('entered');
 });
 
@@ -26,7 +25,7 @@ beer1.addEventListener('mouseenter', function spin(){
 	rotationSpeed = 0.1;
 	console.log('entered');
 });
-  
+
 beer1.addEventListener('mouseleave', function spin(){
 	//beer2.object3D.position.y -= level;
 	rotationSpeed = 0.01;
