@@ -21,13 +21,13 @@ music.addEventListener('mouseenter', function(){
 
 music.components.sound.playSound();
 
-beer1.addEventListener('mouseenter', function(){
+beer1.addEventListener('mouseenter', function spin(){
 		//beer2.object3D.position.y += level;
 	rotationSpeed = 0.1;
 	console.log('entered');
 });
 
-beer1.addEventListener('mouseleave', function(){
+beer1.addEventListener('mouseleave', function spin(){
 	//beer2.object3D.position.y -= level;
 	rotationSpeed = 0.01;
 	console.log('left');
