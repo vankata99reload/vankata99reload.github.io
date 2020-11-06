@@ -57,7 +57,7 @@
       position="-0.932 0.784 -0.238"
       material="color: cyan"
       animation__mouseenter="property: rotation; to: 0 180 0; loop: true; dur: 1000";
-      animation__mouseleave="property: rotation; to: 0 0 0; loop: true; dur: 1000";
+
       >
 
 
@@ -68,12 +68,7 @@
         startEvents: mouseenter;
         dur: 500;"
 
-         <a-animation attribute="position"
-               dur="1000"
-               fill="forwards"
-               to="-0.932 1.5 -0.4"
-               direction="alternate"
-               begin="click"></a-animation>
+
 
      </a-entity>
 
@@ -81,14 +76,14 @@
     scale="0.06 0.06 0.05"
     position="-0.932 0.674 -0.298"
 
-    animation__mouseenter="property: rotation; to: 0 360 0; loop: true; dur: 10000";
-    animation__mouseleave="property: rotation; to: 0 0 0; loop: true; dur: 10000";
+    animation__mouseenter="property: rotation; to: 0 360 0; loop: true; dur: 1000";
+    animation__mouseleave="property: rotation; to: 0 0 0; loop: true; dur: 1000";
 
     animation__mouseenter=sound="src: #song3; autoplay: true";
     animation__mouseleave=sound="src: #song1; autoplay: true";
     >
   </a-entity>
-  <a-entity gltf-model="#bourbon" id="bourbon1"
+  <a-entity gltf-model="#bourbon" id="bourbon"
   scale="0.06 0.06 0.05"
   position="1.074 0.627 -0.229"
 
